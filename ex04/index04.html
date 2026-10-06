@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+
+    <form action="#" method="post">
+        <p>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" value="rania abedalraheem mohammed Alassouli" required minlength="3">
+        </p>
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" value="raniaalassouli390@gmail.com" required>
+        </p>
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" value="roro65456" required minlength="8">
+        </p>
+        <p>
+            <label>Experience Level:</label><br>
+            <input type="radio" id="beginner" name="experience" value="beginner" checked required>
+            <label for="beginner">Beginner</label><br>
+            
+            <input type="radio" id="intermediate" name="experience" value="intermediate">
+            <label for="intermediate">Intermediate</label><br>
+
+            <input type="radio" id="advanced" name="experience" value="advanced">
+            <label for="advanced">Advanced</label>
+        </p>
+        <p>
+            <label for="track">Preferred Track:</label><br>
+            <select id="track" name="track" required>
+                <option value="">-- Please select a track --</option>
+                <option value="frontend">Front-End Development</option>
+                <option value="backend">Back-End Development</option>
+                <option value="fullstack" selected>Full-Stack Development</option>
+            </select>
+        </p>
+        <p>
+            <label for="bio">Short Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" minlength="10" placeholder="Tell us about yourself...">Computer Science Graduate & Full-Stack Developer.</textarea>
+        </p>
+        <p>
+            <input type="checkbox" id="terms" name="terms" checked required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </p>
+        <p>
+            <button type="submit">Register</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
